@@ -1,3 +1,98 @@
-[DOCTYPE HTML]
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Simple GitHub Pages Site</title>
+    <meta name="description" content="A simple webpage deployed with GitHub Pages" />
+    <style>
+      :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#9ca3af;--text:#e6eef6}
+      *{box-sizing:border-box}
+      body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;background:linear-gradient(180deg,#071020 0%, #0f1724 100%);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+      .wrap{width:100%;max-width:900px}
+      header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+      .brand{display:flex;gap:12px;align-items:center}
+      .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+      h1{font-size:1.6rem;margin:0}
+      p.lead{color:var(--muted);margin:6px 0 0}
+      .card{background:linear-gradient(180deg,rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);padding:20px;border-radius:12px}
+      .grid{display:grid;grid-template-columns:1fr 320px;gap:16px}
+      .actions{display:flex;flex-direction:column;gap:8px}
+      a.btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;color:var(--bg);background:var(--accent);font-weight:600}
+      .muted{color:var(--muted);font-size:0.95rem}
+      pre{background:#020617;padding:12px;border-radius:8px;color:#9ae6ff;overflow:auto}
+      footer{margin-top:18px;color:var(--muted);font-size:0.9rem;text-align:center}
+      @media (max-width:720px){.grid{grid-template-columns:1fr;}.logo{width:40px;height:40px}}
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="brand">
+          <div class="logo">PG</div>
+          <div>
+            <h1>Project: Simple Page</h1>
+            <p class="lead">A tiny starter site ready for GitHub Pages</p>
+          </div>
+        </div>
+        <nav class="muted">awaismughal1740988-web / idk</nav>
+      </header>
+
+      <main class="card">
+        <div class="grid">
+          <section>
+            <h2 style="margin-top:0">Welcome!</h2>
+            <p class="muted">This is a simple, responsive webpage you can publish with GitHub Pages. It includes a hero, a short description, and a ready-to-deploy index.html file at the repository root.</p>
+
+            <h3>What you can do</h3>
+            <ul class="muted">
+              <li>Customize the text and style inside this index.html</li>
+              <li>Add more pages and link them from here</li>
+              <li>Deploy to GitHub Pages so the site is available on the web</li>
+            </ul>
+
+            <h3>Quick preview</h3>
+            <pre>&lt;h1&gt;Hello from GitHub Pages&lt;/h1&gt;</pre>
+          </section>
+
+          <aside>
+            <div class="actions">
+              <a class="btn" href="https://github.com/awaismughal1740988-web/idk" target="_blank" rel="noopener">View repository on GitHub</a>
+              <a class="btn" href="#deploy" style="background:#7c3aed;color:#fff">How to deploy</a>
+            </div>
+
+            <div style="margin-top:14px;color:var(--muted);font-size:0.95rem">
+              <strong>Tip:</strong> For a project site the URL will be: https://awaismughal1740988-web.github.io/idk
+            </div>
+          </aside>
+        </div>
+
+        <section id="deploy" style="margin-top:18px">
+          <h3>Deploy to GitHub Pages</h3>
+          <ol class="muted">
+            <li>Commit this <code>index.html</code> to the repository root (already done).</li>
+            <li>Open your repository on GitHub and go to Settings &gt; Pages.</li>
+            <li>Under "Build and deployment" choose "Deploy from a branch" and pick the branch (usually <code>main</code> or <code>master</code>), then the root (<code>/ (root)</code>) folder. Click Save.</li>
+            <li>Wait a few minutes; GitHub will publish your site. The project page URL is <code>https://awaismughal1740988-web.github.io/idk</code>.</li>
+            <li>If you don't see it yet, check Settings &gt; Pages for build errors or go to Actions to see the Pages deployment log.</li>
+          </ol>
+
+          <h4>Local preview</h4>
+          <p class="muted">To preview locally, run one of these in your repo folder:</p>
+          <pre>python -m http.server 8000
+# or
+npx serve .
+# then open http://localhost:8000</pre>
+
+          <h4>Optional: Use the gh-pages branch</h4>
+          <p class="muted">You can also publish from a <code>gh-pages</code> branch. Use the GitHub action or gh-pages npm package to push built files there.</p>
+        </section>
+
+      </main>
+
+      <footer>
+        Built by GitHub Copilot — index.html updated. After you enable Pages, I'll show the expected URL and how to check the deployment log if something goes wrong.
+      </footer>
+    </div>
+  </body>
 </html>
